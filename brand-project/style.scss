@@ -218,6 +218,152 @@ body {
     border: 1px solid rgba(255, 106, 106, 1);
 }
 
+.advantages {
+    background-color: #222224;
+    padding: 103px 0 104px;
+}
+
+.advantages-flex {
+    @include df(space-between, center, 30px);
+}
+
+.advantages__item {
+    @include df(center, center, 0);
+    flex-direction: column;
+}
+
+.advantages__item__img {
+    margin-bottom: 24px;
+}
+
+.advantages__item__heading {
+    color: #fbfbfb;
+    @include ff(20px, 400);
+    margin-bottom: 16px;
+}
+
+.advantages__item__desc {
+    text-align: center;
+    color: #fbfbfb;
+    @include ff(14px, 300);
+}
+
+.footer__top-bg {
+    background-image: url(img/footer__bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 87px 0 126px;
+}
+
+.footer__top {
+    @include df(space-between, center, 0);
+}
+
+.footer__fig {
+    @include df(unset, center, 30px);
+    flex-direction: column;
+    max-width: 31%;
+}
+
+.footer__fig-img {
+    width: 27%;
+}
+
+.footer__figcaption {
+    text-align: center;
+    @include ff(20px, 400);
+    height: 99px;
+}
+
+.footer__figcaption_span {
+    font-style: italic;
+}
+
+.footer__form-info {
+    @include df(center, center, 0);
+    flex-direction: column;
+}
+
+.footer__form-heading {
+    color: #222224;
+    @include ff(24px, 700);
+    line-height: 167.2%;
+}
+
+.footer__form-desc {
+    color: #222224;
+    @include ff(18px, 400);
+    line-height: 167.2%;
+    margin-bottom: 32px;
+}
+.footer__form {
+    @include df(center, center, 0);
+    width: 100%;
+}
+
+.footer__input {
+    height: 49px;
+    background-color: #e1e1e1;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    @include ff(14px, 400);
+    line-height: 17px;
+    color: #222224;
+    width: 100%;
+    padding: 0 10%;
+    opacity: 0.67;
+}
+
+.footer__btn {
+    color: #fff;
+    text-align: center;
+    @include ff(14px, 400);
+    background-color: rgba(241, 109, 127, 1);
+    height: 49px;
+    border: none;
+    border-radius: 0px 20px 20px 0;
+    width: 40%;
+    cursor: pointer;
+}
+
+.footer__bottom-bg {
+    padding: 24px 0;
+    background-color: #222224;
+}
+
+.footer__bottom {
+    @include df(space-between, center, 0);
+}
+
+.footer__copy {
+    color: #fbfbfb;
+    @include ff(16px, 400);
+}
+
+.footer__contacts {
+    @include df(space-between, center, 7px);
+    width: 13%;
+}
+
+.footer__contact-link {
+    @include df(center, center, 0);
+    background-color: rgba(255, 255, 255, 1);
+    height: 32px;
+    width: 100%;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-pinterest-p,
+.fa-twitter {
+    color: rgb(0, 0, 0);
+}
+
+.fa-instagram {
+    font-size: 17px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
         max-width: 768px;
