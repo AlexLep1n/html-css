@@ -134,6 +134,15 @@ body {
     flex-direction: column;
     color: #fff;
     position: absolute;
+    transition: all 0.3s ease;
+}
+
+.offers__item-link:hover .offers__item-text {
+    transform: scale(1.2);
+}
+
+.offers__item-link-big:hover .offers__item-text {
+    transform: scale(1.2);
 }
 
 .offers__item-span {
@@ -216,6 +225,13 @@ body {
     @include ff(16px, 400);
     padding: 15px 39px;
     border: 1px solid rgba(255, 106, 106, 1);
+    transition: all 0.3s ease;
+}
+
+.futured__link-product:hover {
+    color: #fff;
+    background-color: rgba(241, 109, 127, 1);
+    transform: scale(1.1);
 }
 
 .advantages {
@@ -224,7 +240,7 @@ body {
 }
 
 .advantages-flex {
-    @include df(space-between, center, 30px);
+    @include df(center, center, 30px);
 }
 
 .advantages__item {
@@ -246,6 +262,7 @@ body {
     text-align: center;
     color: #fbfbfb;
     @include ff(14px, 300);
+    max-width: 88%;
 }
 
 .footer__top-bg {
@@ -325,6 +342,11 @@ body {
     border-radius: 0px 20px 20px 0;
     width: 40%;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer__btn:hover {
+    transform: scale(1.1);
 }
 
 .footer__bottom-bg {
@@ -351,6 +373,12 @@ body {
     background-color: rgba(255, 255, 255, 1);
     height: 32px;
     width: 100%;
+    transition: all 0.3s ease;
+}
+
+.footer__contact-link:hover {
+    background-color: rgba(241, 109, 127, 1);
+    transform: scale(1.1);
 }
 
 .fa-facebook-f,
@@ -360,8 +388,17 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.fa-instagram {
-    font-size: 17px;
+.footer__contact-link:hover .fa-facebook-f {
+    color: rgba(255, 255, 255, 1);
+}
+.footer__contact-link:hover .fa-instagram {
+    color: rgba(255, 255, 255, 1);
+}
+.footer__contact-link:hover .fa-pinterest-p {
+    color: rgba(255, 255, 255, 1);
+}
+.footer__contact-link:hover .fa-twitter {
+    color: rgba(255, 255, 255, 1);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -466,6 +503,53 @@ body {
 
     .futered__txt-box {
         padding: 25px 16px;
+    }
+
+    .advantages {
+        padding: 48px 0 64px;
+    }
+
+    .advantages-flex {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .advantages__item__desc {
+        max-width: 54%;
+    }
+
+    .footer__top-bg {
+        padding: 54px 0 140px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .footer__fig {
+        max-width: 100%;
+    }
+
+    .footer__fig-img {
+        width: 13%;
+    }
+
+    .footer__figcaption {
+        max-width: 55%;
+    }
+
+    .footer__form-heading,
+    .footer__form-desc {
+        line-height: 162%;
+    }
+
+    .footer__form-desc {
+        margin-bottom: 27px;
+    }
+
+    .footer__contacts {
+        width: 20%;
     }
 }
 
@@ -572,5 +656,59 @@ body {
     .futered__item {
         max-width: 359px;
         margin-bottom: 16px;
+    }
+
+    .advantages {
+        padding: 48px 0 81px;
+    }
+
+    .advantages-flex {
+        flex-direction: column;
+        gap: 47px;
+    }
+
+    .footer__top-bg {
+        padding: 64px 0 110px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        gap: 59px;
+    }
+
+    .footer__fig {
+        max-width: 100%;
+    }
+
+    .footer__fig-img {
+        width: 25%;
+    }
+
+    .footer__figcaption {
+        @include ff(18px, 400);
+        height: 73px;
+    }
+
+    .footer__form-heading,
+    .footer__form-desc {
+        line-height: 153%;
+    }
+
+    .footer__form-desc {
+        @include ff(14px, 400);
+        margin-bottom: 22px;
+    }
+
+    .footer__bottom-bg {
+        padding: 43px 0 9px;
+    }
+
+    .footer__bottom {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .footer__contacts {
+        width: 42%;
     }
 }
