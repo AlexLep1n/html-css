@@ -1,0 +1,80 @@
+@import "vars";
+
+@mixin df($jc, $ai, $g) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}
+
+@mixin ff($fs, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+.filter-general {
+    padding: 39px 0 48px;
+}
+
+.filter-sort {
+    @include df(flex-start, center, 320px);
+}
+
+.filter-box {
+    @include df(flex-start, center, 0);
+    position: relative;
+}
+.filter {
+    padding: 13px 0 16px 16px;
+    width: 360px;
+    display: block;
+
+    &[open] .filter__heading {
+        color: $colorPink;
+    }
+
+    &[open] .filter__img {
+        fill: $colorPink;
+    }
+
+    &[open] {
+        background-color: #fff;
+        box-shadow: 4px 35px rgba(0, 0, 0, 0.21);
+    }
+}
+
+.filter[open] .filter__heading {
+    color: $colorPink;
+}
+
+.filter__sum {
+    @include df(flex-start, center, 11px);
+}
+
+.futured__filter-sum::-webkit-details-marker {
+    display: none;
+}
+
+.filter__heading {
+    color: #000;
+    @include ff(14px, 600);
+}
+
+.filter__menu {
+    position: absolute;
+    width: 100%;
+    padding-left: 1px;
+}
+
+.filter__item-heading {
+    @include ff(14px, 400);
+    @include df(unset, unset, 0);
+    color: $colorPink;
+    border-left: 5px solid $colorPink;
+    border-bottom: 1px solid #ebebeb;
+    padding: 11px;
+    margin-top: 16px;
+}
+.filter__item-heading::-webkit-details-marker {
+    display: none;
+}
