@@ -21,6 +21,14 @@
     text-decoration: none;
 }
 
+summary {
+    display: flex;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 body {
     font-family: "Lato", sans-serif;
 }

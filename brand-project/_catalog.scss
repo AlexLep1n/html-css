@@ -13,68 +13,92 @@
 }
 
 .filter-general {
-    padding: 39px 0 48px;
+    padding: 39px 0 0 0;
+    height: 132px;
+    position: relative;
 }
 
 .filter-sort {
-    @include df(flex-start, center, 320px);
+    @include df(unset, unset, 0);
 }
 
-.filter-box {
-    @include df(flex-start, center, 0);
-    position: relative;
-}
 .filter {
-    padding: 13px 0 16px 16px;
+    padding: 13px 16px 16px;
     width: 360px;
-    display: block;
-
-    &[open] .filter__heading {
-        color: $colorPink;
-    }
-
-    &[open] .filter__img {
-        fill: $colorPink;
-    }
+    position: absolute;
+    z-index: 2;
 
     &[open] {
         background-color: #fff;
-        box-shadow: 4px 35px rgba(0, 0, 0, 0.21);
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] &__heading {
+        color: $colorPink;
+    }
+
+    &[open] &__img {
+        fill: $colorPink;
+    }
+
+    &__summary {
+        @include df(unset, center, 11px);
+    }
+
+    &__heading {
+        color: #000;
+        @include ff(14px, 600);
+    }
+
+    &__item {
+        margin: 16px 0 0 0;
+    }
+
+    &__item[open] &__item-heading {
+        color: $colorPink;
+    }
+
+    &__item-heading {
+        color: #6f6e6e;
+        @include ff(14px, 400);
+        padding: 11px 0 11px 11px;
+        border-left: 5px solid $colorPink;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    &__link-box {
+        @include df(unset, unset, 11px);
+        flex-direction: column;
+        padding: 24px 0 8px 17px;
+    }
+
+    &__link {
+        color: #6f6e6e;
+        @include ff(14px, 400);
+    }
+
+    &__link:hover {
+        color: $colorPink;
     }
 }
 
-.filter[open] .filter__heading {
-    color: $colorPink;
-}
+.sort {
+    @include df(center, flex-start, 28px);
+    position: relative;
+    left: 390px;
+    top: 13px;
 
-.filter__sum {
-    @include df(flex-start, center, 11px);
-}
+    &__summary {
+        @include df(center, center, 10px);
+        @include ff(14px, 600);
+        color: #6f6e6e;
+    }
 
-.futured__filter-sum::-webkit-details-marker {
-    display: none;
-}
+    &__item:hover &__summary {
+        color: $colorPink;
+    }
 
-.filter__heading {
-    color: #000;
-    @include ff(14px, 600);
-}
-
-.filter__menu {
-    position: absolute;
-    width: 100%;
-    padding-left: 1px;
-}
-
-.filter__item-heading {
-    @include ff(14px, 400);
-    @include df(unset, unset, 0);
-    color: $colorPink;
-    border-left: 5px solid $colorPink;
-    border-bottom: 1px solid #ebebeb;
-    padding: 11px;
-    margin-top: 16px;
-}
-.filter__item-heading::-webkit-details-marker {
-    display: none;
+    &__item:hover path {
+        fill: $colorPink;
+    }
 }
