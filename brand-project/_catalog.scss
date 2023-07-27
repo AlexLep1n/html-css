@@ -12,14 +12,11 @@
     font-weight: $fw;
 }
 
-.filter-general {
+.filter-sort {
+    @include df(unset, unset, 0);
     padding: 39px 0 0 0;
     height: 132px;
     position: relative;
-}
-
-.filter-sort {
-    @include df(unset, unset, 0);
 }
 
 .filter {
@@ -43,6 +40,7 @@
 
     &__summary {
         @include df(unset, center, 11px);
+        cursor: pointer;
     }
 
     &__heading {
@@ -52,6 +50,7 @@
 
     &__item {
         margin: 16px 0 0 0;
+        cursor: pointer;
     }
 
     &__item[open] &__item-heading {
@@ -84,14 +83,20 @@
 
 .sort {
     @include df(center, flex-start, 28px);
-    position: relative;
+    position: absolute;
     left: 390px;
-    top: 13px;
+    top: 51px;
 
     &__summary {
         @include df(center, center, 10px);
         @include ff(14px, 600);
         color: #6f6e6e;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    &__item {
+        position: relative;
     }
 
     &__item:hover &__summary {
@@ -100,5 +105,61 @@
 
     &__item:hover path {
         fill: $colorPink;
+    }
+
+    &__box {
+        @include df(center, flex-start, 9px);
+        flex-direction: column;
+        padding: 7px 30px 11px 9px;
+        background: #fff;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        position: absolute;
+        z-index: 2;
+        top: 22px;
+        left: -11px;
+    }
+
+    &__box-trend_left {
+        left: 25px;
+    }
+
+    &__label {
+        @include df(center, center, 9px);
+        color: #6f6e6e;
+        @include ff(14px, 400);
+    }
+
+    &__check {
+        color: #ebebeb;
+    }
+}
+
+.futured {
+    &__pagination {
+        @include df(center, center, 0);
+    }
+
+    &__pagination-box {
+        @include df(center, center, 15px);
+        padding: 12px 16px;
+        border: 1px solid #ebebeb;
+        transition: all 0.3s ease;
+    }
+
+    &__pagination-box svg {
+        cursor: pointer;
+    }
+
+    &__pagination-box svg:hover path {
+        fill: $colorPink;
+    }
+
+    &__pagination-link {
+        color: #c4c4c4;
+        @include ff(16px, 300);
+    }
+
+    &__pagination-link:hover {
+        color: $colorPink;
     }
 }

@@ -15,41 +15,41 @@
 .arrivals {
     background-color: #f8f3f4;
     padding: 59px 0 60px;
-}
 
-.arrivals-flex {
-    @include df(space-between, center, 0);
-}
+    &__flex {
+        @include df(space-between, center, 0);
+    }
 
-.arrivals__heading {
-    color: $colorPink;
-    @include ff(24px, 400);
-}
+    &__heading {
+        color: $colorPink;
+        @include ff(24px, 400);
+    }
 
-.arrivals__breadcrump {
-    width: 19%;
-}
+    &__breadcrump {
+        width: 19%;
+    }
 
-.arrivals__link {
-    color: #636363;
-    @include ff(14px, 300);
-}
+    &__link {
+        color: #636363;
+        @include ff(14px, 300);
+    }
 
-.arrivals__link::before {
-    content: "/\00a0";
-    color: #636363;
-    padding: 0 1%;
-    font-weight: 300;
-}
+    &__link::before {
+        content: "/\00a0";
+        color: #636363;
+        padding: 0 1%;
+        font-weight: 300;
+    }
 
-.arrivals__link:first-of-type:before {
-    content: "";
-    padding: 0;
-}
+    &__link:first-of-type:before {
+        content: "";
+        padding: 0;
+    }
 
-.arrivals__link_active {
-    color: $colorPink;
-    @include ff(14px, 700);
+    &__link_active {
+        color: $colorPink;
+        @include ff(14px, 700);
+    }
 }
 
 .slider {
@@ -73,98 +73,112 @@
 
 .collection {
     margin-bottom: 70px;
-}
 
-.collection-flex {
-    @include df(center, center, 0);
-    flex-direction: column;
-    border: 1px solid #eaeaea;
-    transform: translateY(-52px);
-    background-color: white;
-}
+    &__flex {
+        @include df(center, center, 0);
+        flex-direction: column;
+        border: 1px solid #eaeaea;
+        transform: translateY(-52px);
+        background-color: white;
+    }
 
-.collection__heading {
-    color: $colorPink;
-    @include ff(14px, 300);
-    margin: 64px 0 12px;
-}
+    &__heading {
+        color: $colorPink;
+        @include ff(14px, 300);
+        margin: 64px 0 12px;
+    }
 
-.collection__hr-top {
-    margin-bottom: 12px;
-    border: 3px solid #ef5b70;
-    width: 63px;
-}
+    &__hr-top {
+        margin-bottom: 12px;
+        border: 3px solid #ef5b70;
+        width: 63px;
+    }
 
-.collection__name {
-    color: #4d4d4d;
-    @include ff(18px, 300);
-    margin-bottom: 48px;
-}
+    &__name {
+        color: #4d4d4d;
+        @include ff(18px, 300);
+        margin-bottom: 48px;
+    }
 
-.collection__desc {
-    color: #5e5e5e;
-    text-align: center;
-    @include ff(14px, 300);
-    margin-bottom: 32px;
-    max-width: 52%;
-}
+    &__desc {
+        color: #5e5e5e;
+        text-align: center;
+        @include ff(14px, 300);
+        margin-bottom: 32px;
+        max-width: 52%;
+    }
 
-.collection__price {
-    color: #ef5b70;
-    @include ff(24px, 300);
-    margin-bottom: 65px;
-}
+    &__price {
+        color: #ef5b70;
+        @include ff(24px, 300);
+        margin-bottom: 65px;
+    }
 
-.collection__hr-bottom {
-    border: 1px solid #eaeaea;
-    width: 57%;
-    margin-bottom: 65px;
-}
+    &__hr-bottom {
+        border: 1px solid #eaeaea;
+        width: 57%;
+        margin-bottom: 65px;
+    }
 
-.collection__sort {
-    @include df(center, center, 23px);
-    margin-bottom: 48px;
-}
+    &__sort {
+        @include df(center, center, 23px);
+        margin-bottom: 48px;
+    }
 
-.collection__sort-item {
-    @include df(center, center, 9px);
-}
+    &__sort-item {
+        @include df(center, center, 9px);
+    }
 
-.collection__sort-item::-webkit-details-marker {
-    display: none;
-}
+    &__sort-item::-webkit-details-marker {
+        display: none;
+    }
 
-.collection__sort-heading {
-    color: #6f6e6e;
-    @include ff(14px, 400);
+    &__sort-heading {
+        color: #6f6e6e;
+        @include ff(14px, 400);
+    }
+
+    &__btn {
+        padding: 15px 57px 9px 24px;
+        border: 1px solid #ff6a6a;
+        @include df(center, center, 23px);
+        margin-bottom: 64px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        background-color: $colorPink;
+        transform: scale(1.1);
+        .collection__btn-img path {
+            fill: white;
+        }
+
+        .collection__btn-text {
+            color: white;
+        }
+    }
+
+    &__btn-img {
+        fill: #ef5b70;
+    }
+
+    &__btn-text {
+        @include ff(16px, 400);
+        color: #f26376;
+    }
 }
 
 .fa-angle-down:hover {
     color: $colorPink;
 }
 
-.collection__btn {
-    padding: 15px 57px 9px 24px;
-    border: 1px solid #ff6a6a;
-    @include df(center, center, 23px);
-    margin-bottom: 64px;
-}
-
-.collection__btn-img {
-    fill: #ef5b70;
-}
-
-.collection__btn-text {
-    @include ff(16px, 400);
-    color: #f26376;
-}
-
 .prod-futured {
     margin-bottom: 128px;
-}
 
-.prod-futured__box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
