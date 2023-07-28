@@ -397,6 +397,58 @@ body {
 .nav__cart-link {
   padding: 26px 0 22px;
 }
+.nav__menu {
+  position: relative;
+  cursor: pointer;
+}
+.nav__menu-box {
+  position: absolute;
+  z-index: 2;
+  width: 232px;
+  background-color: #fff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  top: 77px;
+  left: 66px;
+  padding: 37px 73px 12px 33px;
+}
+.nav__menu-close {
+  position: absolute;
+  right: 17px;
+  top: 16px;
+  cursor: pointer;
+}
+.nav__menu-close:hover path {
+  fill: #f16d7f;
+}
+.nav__menu-heading {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.nav__menu-item-heading {
+  color: #f16d7f;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.nav__menu-item {
+  display: flex;
+  justify-content: unset;
+  align-items: flex-start;
+  gap: 11px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-left: 21px;
+}
+.nav__item-link {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+}
+.nav__item-link:hover {
+  color: #f16d7f;
+}
 
 .brand {
   background: #f1e4e6;
@@ -774,6 +826,9 @@ body {
   .nav__cart-link {
     padding: 27px 0 18px;
   }
+  .nav__menu-box {
+    left: -46px;
+  }
   .brand__img {
     height: 368px;
     padding-left: 3%;
@@ -839,30 +894,29 @@ body {
   .advantages__desc {
     max-width: 54%;
   }
-  .footer__top-bg {
+  footer__top-bg {
     padding: 54px 0 140px;
   }
-  .footer__top {
+  footer__top {
     flex-direction: column;
     gap: 48px;
   }
-  .footer__fig {
+  footer__fig {
     max-width: 100%;
   }
-  .footer__fig-img {
+  footer__fig-img {
     width: 13%;
   }
-  .footer__figcaption {
+  footer__figcaption {
     max-width: 55%;
   }
-  .footer__form-heading,
-  .footer__form-desc {
+  footer__form-heading, footer__form-desc {
     line-height: 162%;
   }
-  .footer__form-desc {
+  footer__form-desc {
     margin-bottom: 27px;
   }
-  .footer__contacts {
+  footer__contacts {
     width: 20%;
   }
 }
@@ -879,9 +933,7 @@ body {
   .nav__right {
     padding-right: 2%;
   }
-  .nav__user-profile,
-  .nav__cart-link,
-  .brand__img {
+  .nav__user-profile, .nav__cart-link {
     display: none;
   }
   .nav__logo-link {
@@ -893,12 +945,18 @@ body {
   .nav__menu-link {
     padding: 25px 0 26px;
   }
+  .nav__menu-box {
+    left: -186px;
+  }
   .brand {
     margin-bottom: 64px;
   }
   .brand__flex {
     padding: 148px 2% 149px;
     justify-content: center;
+  }
+  .brand__img {
+    display: none;
   }
   .brand__text-box {
     width: 100%;
@@ -976,8 +1034,7 @@ body {
     font-weight: 400;
     height: 73px;
   }
-  .footer__form-heading,
-  .footer__form-desc {
+  .footer__form-heading, .footer__form-desc {
     line-height: 153%;
   }
   .footer__form-desc {
