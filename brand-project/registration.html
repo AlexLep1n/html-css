@@ -81,24 +81,25 @@
             <form action="#" class="reg__form">
                 <div class="reg__box">
                     <p class="reg__form-heading">Your Name</p>
-                    <input type="text" class="reg__form-input" placeholder="First Name">
-                    <input type="text" class="reg__form-input" placeholder="Last Name">
+                    <input type="text" class="reg__form-input" placeholder="First Name" pattern="^[A-Za-z]+$" required>
+                    <input type="text" class="reg__form-input" placeholder="Last Name" pattern="^[A-Za-z]+$" required>
                 </div>
                 <div class="reg__radio-box">
                     <label for="Male" class="reg__radio-label">
-                        <input type="radio" name="gender" id="Male" class="reg__radio-input">Male
+                        <input type="radio" name="gender" id="Male" class="reg__radio-input" required>Male
                     </label>
                     <label for="Female" class="reg__radio-label">
-                        <input type="radio" name="gender" id="Female" class="reg__radio-input">Female
+                        <input type="radio" name="gender" id="Female" class="reg__radio-input" required>Female
                     </label>
                     <label for="Other" class="reg__radio-label">
-                        <input type="radio" name="gender" id="Other" class="reg__radio-input">Other
+                        <input type="radio" name="gender" id="Other" class="reg__radio-input" required>Other
                     </label>
                 </div>
                 <div class="reg__box">
                     <p class="reg__form-heading">Login details</p>
-                    <input type="email" class="reg__form-input" placeholder="Email">
-                    <input type="password" class="reg__form-input" placeholder="Password" pattern="[A-Za-z0-9]{8,}">
+                    <input type="email" class="reg__form-input" placeholder="Email" required>
+                    <input type="password" class="reg__form-input" placeholder="Password" pattern="[A-Za-z0-9]{8,}"
+                        required>
                 </div>
                 <p class="reg__login-desc">Please use 8 or more characters, with at least 1 number and a mixture of
                     uppercase and lowercase letters</p>
