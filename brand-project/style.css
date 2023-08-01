@@ -333,7 +333,7 @@
 }
 
 .cart {
-  margin: 96px 0 128px;
+  padding: 96px 0 128px;
 }
 .cart__flex {
   display: flex;
@@ -485,7 +485,7 @@
   background-color: #f5f3f3;
   padding: 39px 34px 42px 44px;
 }
-.cart__offer-sub, .cart__offer-sub_span {
+.cart__offer-sub {
   color: #4a4a4a;
   font-size: 11px;
   font-weight: 400;
@@ -494,6 +494,9 @@
   text-align: right;
 }
 .cart__offer-sub_span {
+  color: #4a4a4a;
+  font-size: 11px;
+  font-weight: 400;
   padding-left: 6%;
 }
 .cart__offer-grand {
@@ -526,6 +529,116 @@
 }
 .cart__offer-link:hover {
   transform: scale(1.1);
+}
+
+.reg {
+  padding: 64px 0 96px;
+}
+.reg__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  gap: 128px;
+}
+.reg__form {
+  display: flex;
+  justify-content: unset;
+  align-items: unset;
+  gap: 0;
+  flex-direction: column;
+  width: 32%;
+}
+.reg__box {
+  display: flex;
+  justify-content: unset;
+  align-items: unset;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.reg__form-heading {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+}
+.reg__form-input {
+  padding: 13px 5% 16px;
+  color: #222;
+  font-size: 13px;
+  font-weight: 300;
+  border: 1px solid #a4a4a4;
+}
+.reg__form-input::-moz-placeholder {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+}
+.reg__form-input::placeholder {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+}
+.reg__radio-box {
+  margin: 15px 0 33px;
+  display: flex;
+  gap: 20px;
+}
+.reg__radio-label {
+  color: #000;
+  font-size: 11px;
+  font-weight: 300;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 10px;
+}
+.reg__login-desc {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 39px;
+}
+.reg__btn {
+  background-color: #f16d7f;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px 20px 17px 29px;
+  width: 167px;
+  border: 1px solid #f16d7f;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.reg__btn:hover {
+  background-color: #fff;
+  color: #f16d7f;
+  transform: scale(1.1);
+}
+.reg__btn:hover path {
+  fill: #f16d7f;
+}
+.reg__btn svg {
+  margin-left: 20px;
+}
+.reg__loyalty {
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.reg__loyalty-heading, .reg__loyalty-desc, .reg__loyalty-item {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+}
+.reg__loyalty-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reg__loyalty-item svg {
+  margin-right: 23px;
 }
 
 * {

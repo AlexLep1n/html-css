@@ -13,7 +13,7 @@
 }
 
 .cart {
-    margin: 96px 0 128px;
+    padding: 96px 0 128px;
 
     &__flex {
         @include df(space-between, unset, 0);
@@ -153,17 +153,18 @@
         padding: 39px 34px 42px 44px;
     }
 
-    &__offer-sub,
-    &__offer-sub_span {
+    &__offer-sub {
         color: #4a4a4a;
         @include ff(11px, 400);
         margin-bottom: 12px;
         width: 100%;
         text-align: right;
-    }
 
-    &__offer-sub_span {
-        padding-left: 6%;
+        &_span {
+            color: #4a4a4a;
+            @include ff(11px, 400);
+            padding-left: 6%;
+        }
     }
 
     &__offer-grand {
@@ -172,12 +173,12 @@
         margin-bottom: 21px;
         width: 100%;
         text-align: right;
-    }
 
-    &__offer-grand_span {
-        color: $colorPink;
-        @include ff(16px, 700);
-        padding-left: 6%;
+        &_span {
+            color: $colorPink;
+            @include ff(16px, 700);
+            padding-left: 6%;
+        }
     }
 
     &__offer-hr {
