@@ -302,6 +302,12 @@
   color: #ebebeb;
 }
 
+.futured__catalog-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
 .futured__pagination {
   display: flex;
   justify-content: center;
@@ -332,6 +338,22 @@
   color: #f16d7f;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .filter-sort {
+    padding: 11px 0 0 0;
+    height: 81px;
+  }
+  .sort {
+    left: 455px;
+    top: 24px;
+  }
+  .futured__catalog-box {
+    margin-bottom: 40px;
+  }
+  .futured__catalog-box .futured__item:nth-child(3) {
+    display: none;
+  }
+}
 .cart {
   padding: 96px 0 128px;
 }
@@ -479,7 +501,7 @@
 .cart__offer {
   display: flex;
   justify-content: unset;
-  align-items: flex-end;
+  align-items: unset;
   gap: 0;
   flex-direction: column;
   background-color: #f5f3f3;
@@ -516,7 +538,6 @@
 .cart__offer-hr {
   border: 1px solid #e2e2e2;
   margin-bottom: 17px;
-  width: 97%;
 }
 .cart__offer-link {
   color: #fff;
@@ -531,6 +552,35 @@
   transform: scale(1.1);
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cart {
+    padding: 59px 0 128px;
+  }
+  .cart__flex {
+    flex-direction: column;
+  }
+  .cart__cards {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  .cart__card-input {
+    width: 13%;
+  }
+  .cart__info {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .cart__form {
+    width: 49%;
+  }
+  .cart__offer {
+    width: 49%;
+    max-height: 214px;
+  }
+}
 .reg {
   padding: 64px 0 96px;
 }
@@ -591,6 +641,10 @@
   justify-content: unset;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+.reg__radio-input {
+  cursor: pointer;
 }
 .reg__login-desc {
   color: #b1b1b1;
@@ -1212,7 +1266,7 @@ body {
     margin-bottom: 72px;
   }
   .futured__item {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
   }
   .futured__txt-box {
     padding: 25px 16px;
@@ -1227,29 +1281,29 @@ body {
   .advantages__desc {
     max-width: 54%;
   }
-  footer__top-bg {
+  .footer__top-bg {
     padding: 54px 0 140px;
   }
-  footer__top {
+  .footer__top {
     flex-direction: column;
     gap: 48px;
   }
-  footer__fig {
+  .footer__fig {
     max-width: 100%;
   }
-  footer__fig-img {
+  .footer__fig-img {
     width: 13%;
   }
-  footer__figcaption {
+  .footer__figcaption {
     max-width: 55%;
   }
-  footer__form-heading, footer__form-desc {
+  .footer__form-heading, .footer__form-desc {
     line-height: 162%;
   }
-  footer__form-desc {
+  .footer__form-desc {
     margin-bottom: 27px;
   }
-  footer__contacts {
+  .footer__contacts {
     width: 20%;
   }
 }

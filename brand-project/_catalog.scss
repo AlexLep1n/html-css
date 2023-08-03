@@ -135,6 +135,13 @@
 }
 
 .futured {
+    &__catalog-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+    }
+
     &__pagination {
         @include df(center, center, 0);
     }
@@ -161,5 +168,27 @@
 
     &__pagination-link:hover {
         color: $colorPink;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .filter-sort {
+        padding: 11px 0 0 0;
+        height: 81px;
+    }
+
+    .sort {
+        left: 455px;
+        top: 24px;
+    }
+
+    .futured {
+        &__catalog-box {
+            margin-bottom: 40px;
+        }
+
+        &__catalog-box &__item:nth-child(3) {
+            display: none;
+        }
     }
 }

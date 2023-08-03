@@ -55,6 +55,11 @@
         color: #000;
         @include ff(11px, 300);
         @include df(unset, center, 10px);
+        cursor: pointer;
+    }
+
+    &__radio-input {
+        cursor: pointer;
     }
 
     &__login-desc {

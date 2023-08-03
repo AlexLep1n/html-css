@@ -147,7 +147,7 @@
     }
 
     &__offer {
-        @include df(unset, flex-end, 0);
+        @include df(unset, unset, 0);
         flex-direction: column;
         background-color: #f5f3f3;
         padding: 39px 34px 42px 44px;
@@ -184,7 +184,6 @@
     &__offer-hr {
         border: 1px solid #e2e2e2;
         margin-bottom: 17px;
-        width: 97%;
     }
 
     &__offer-link {
@@ -198,5 +197,41 @@
 
     &__offer-link:hover {
         transform: scale(1.1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cart {
+        padding: 59px 0 128px;
+
+        &__flex {
+            flex-direction: column;
+        }
+
+        &__cards {
+            width: 100%;
+            margin-bottom: 64px;
+        }
+
+        &__card-input {
+            width: 13%;
+        }
+
+        &__info {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        &__form {
+            width: 49%;
+        }
+
+        &__offer {
+            width: 49%;
+            max-height: 214px;
+        }
     }
 }
