@@ -637,10 +637,34 @@
   flex-direction: column;
   gap: 16px;
 }
-.reg__loyalty-item svg {
-  margin-right: 23px;
+.reg__loyalty-item {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 22px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  .content {
+    padding: 0 2%;
+  }
+  .reg {
+    padding: 40px 0 96px;
+  }
+  .reg__flex {
+    gap: 22px;
+  }
+  .reg__form {
+    width: 55%;
+  }
+  .reg__loyalty-heading, .reg__loyalty-desc, .reg__loyalty-item {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
 * {
   margin: 0;
   padding: 0;

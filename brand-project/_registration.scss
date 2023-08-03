@@ -108,7 +108,34 @@
         gap: 16px;
     }
 
-    &__loyalty-item svg {
-        margin-right: 23px;
+    &__loyalty-item {
+        @include df(unset, center, 22px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .content {
+        padding: 0 2%;
+    }
+
+    .reg {
+        padding: 40px 0 96px;
+        &__flex {
+            gap: 22px;
+        }
+
+        &__form {
+            width: 55%;
+        }
+
+        &__loyalty-heading,
+        &__loyalty-desc,
+        &__loyalty-item {
+            @include ff(16px, 300);
+        }
     }
 }
