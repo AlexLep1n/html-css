@@ -955,6 +955,7 @@ body {
 .futured__item {
   max-width: 360px;
   margin-bottom: 30px;
+  position: relative;
 }
 .futured__item:hover .futured__item-img {
   filter: brightness(45%);
@@ -1005,6 +1006,34 @@ body {
   color: #fff;
   background-color: rgb(241, 109, 127);
   transform: scale(1.1);
+}
+.futured__cart-box {
+  position: absolute;
+  z-index: 2;
+  top: 188px;
+  left: 111px;
+  display: none;
+}
+.futured__item:hover .futured__cart-box {
+  display: flex;
+}
+.futured__cart-link {
+  padding: 11px 16px 8px 13px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  transition: all 0.3s ease;
+}
+.futured__cart-link:hover {
+  box-shadow: 0 0 10px #ffffff;
+  transform: scale(1.1);
+}
+.futured__cart-link-txt {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .advantages {

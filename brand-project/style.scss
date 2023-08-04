@@ -248,6 +248,7 @@ body {
     &__item {
         max-width: 360px;
         margin-bottom: 30px;
+        position: relative;
     }
 
     &__item:hover &__item-img {
@@ -301,6 +302,35 @@ body {
         color: #fff;
         background-color: rgba(241, 109, 127, 1);
         transform: scale(1.1);
+    }
+
+    &__cart-box {
+        position: absolute;
+        z-index: 2;
+        top: 188px;
+        left: 111px;
+        display: none;
+    }
+
+    &__item:hover &__cart-box {
+        display: flex;
+    }
+
+    &__cart-link {
+        padding: 11px 16px 8px 13px;
+        border: 1px solid #fff;
+        @include df(center, center, 11px);
+        transition: all 0.3s ease;
+    }
+
+    &__cart-link:hover {
+        box-shadow: 0 0 10px #ffffff;
+        transform: scale(1.1);
+    }
+
+    &__cart-link-txt {
+        color: #fff;
+        @include ff(14px, 400);
     }
 }
 
