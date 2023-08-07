@@ -97,7 +97,7 @@
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 32px;
-  max-width: 52%;
+  max-width: 554px;
 }
 .collection__price {
   color: #ef5b70;
@@ -161,6 +161,11 @@
   color: #f26376;
 }
 
+.fa-angle-down {
+  color: #6f6e6e;
+  font-size: 12px;
+}
+
 .fa-angle-down:hover {
   color: #f16d7f;
 }
@@ -188,6 +193,55 @@
     margin-bottom: 98px;
   }
   .prod-futured .futured__item:nth-child(3) {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .arrivals {
+    padding: 24px 0 46px;
+  }
+  .arrivals__flex {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .slider {
+    padding: 85px 0;
+  }
+  .slider__img {
+    max-width: 253px;
+  }
+  .collection__flex {
+    transform: translateY(0);
+  }
+  .collection__name {
+    margin-bottom: 32px;
+  }
+  .collection__desc {
+    line-height: 143.1%;
+    max-width: 92%;
+  }
+  .collection__price {
+    line-height: 130%;
+    margin-bottom: 32px;
+  }
+  .collection__hr-bottom {
+    width: 49%;
+    margin-bottom: 50px;
+  }
+  .collection__sort-item {
+    gap: 10px;
+  }
+  .collection__sort-heading {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .collection__sort {
+    margin-bottom: 64px;
+  }
+  .prod-futured {
+    margin-bottom: 48px;
+  }
+  .prod-futured__box .futured__item:nth-child(2) {
     display: none;
   }
 }

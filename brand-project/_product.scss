@@ -106,7 +106,7 @@
         text-align: center;
         @include ff(14px, 300);
         margin-bottom: 32px;
-        max-width: 52%;
+        max-width: 554px;
     }
 
     &__price {
@@ -170,6 +170,11 @@
     }
 }
 
+.fa-angle-down {
+    color: #6f6e6e;
+    font-size: 12px;
+}
+
 .fa-angle-down:hover {
     color: $colorPink;
 }
@@ -203,6 +208,68 @@
     }
 
     .prod-futured .futured__item:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .arrivals {
+        padding: 24px 0 46px;
+        &__flex {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    .slider {
+        padding: 85px 0;
+        &__img {
+            max-width: 253px;
+        }
+    }
+
+    .collection {
+        &__flex {
+            transform: translateY(0);
+        }
+
+        &__name {
+            margin-bottom: 32px;
+        }
+
+        &__desc {
+            line-height: 143.1%;
+            max-width: 92%;
+        }
+
+        &__price {
+            line-height: 130%;
+            margin-bottom: 32px;
+        }
+
+        &__hr-bottom {
+            width: 49%;
+            margin-bottom: 50px;
+        }
+
+        &__sort-item {
+            gap: 10px;
+        }
+
+        &__sort-heading {
+            @include ff(10px, 400);
+        }
+
+        &__sort {
+            margin-bottom: 64px;
+        }
+    }
+
+    .prod-futured {
+        margin-bottom: 48px;
+    }
+
+    .prod-futured__box .futured__item:nth-child(2) {
         display: none;
     }
 }
