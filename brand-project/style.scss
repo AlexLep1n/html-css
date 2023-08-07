@@ -242,7 +242,7 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 48px;
+        margin-bottom: 18px;
     }
 
     &__item {
@@ -514,11 +514,11 @@ body {
 
     .nav {
         &__left {
-            padding-left: 3%;
+            padding-left: 2%;
         }
 
         &__right {
-            padding-right: 3%;
+            padding-right: 2%;
         }
 
         &__logo-link {
