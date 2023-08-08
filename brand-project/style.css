@@ -696,7 +696,7 @@ body {
     margin-bottom: 96px;
   }
   .futured__box {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
   .futured__text {
     margin-bottom: 64px;
@@ -1410,6 +1410,7 @@ body {
   background-color: #f16d7f;
   border: 1px solid #f16d7f;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .cart__offer-link:hover {
   transform: scale(1.1);
@@ -1445,7 +1446,7 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .arrivals-cart {
+  .arrivals_padding {
     padding: 50px 0 69px;
   }
   .cart {
@@ -1643,5 +1644,29 @@ body {
   .reg__loyalty-heading, .reg__loyalty-desc, .reg__loyalty-item {
     font-size: 16px;
     font-weight: 300;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .reg {
+    padding: 40px 0 96px;
+  }
+  .reg__flex {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .reg__form {
+    width: 100%;
+  }
+  .reg__loyalty {
+    width: 100%;
+    gap: 22px;
+  }
+  .reg__loyalty-heading, .reg__loyalty-desc, .reg__loyalty-item {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .reg__loyalty-heading {
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

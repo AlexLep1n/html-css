@@ -144,3 +144,34 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .reg {
+        padding: 40px 0 96px;
+
+        &__flex {
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        &__form {
+            width: 100%;
+        }
+
+        &__loyalty {
+            width: 100%;
+            gap: 22px;
+        }
+
+        &__loyalty-heading,
+        &__loyalty-desc,
+        &__loyalty-item {
+            @include ff(16px, 300);
+        }
+
+        &__loyalty-heading {
+            margin-bottom: 10px;
+        }
+    }
+}

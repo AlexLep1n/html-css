@@ -195,6 +195,7 @@
         background-color: $colorPink;
         border: 1px solid $colorPink;
         transition: all 0.3s ease;
+        text-align: center;
     }
 
     &__offer-link:hover {
@@ -239,7 +240,7 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .arrivals-cart {
+    .arrivals_padding {
         padding: 50px 0 69px;
     }
 
