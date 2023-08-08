@@ -43,6 +43,8 @@
         top: 28px;
         right: 22px;
         cursor: pointer;
+        width: 18px;
+        height: 18px;
     }
 
     &__card-close:hover path {
@@ -93,7 +95,7 @@
     }
 
     &__btn {
-        color: #000;
+        color: #4a4a4a;
         @include ff(14px, 300);
         padding: 16px 40px;
         border: 1px solid #a4a4a4;
@@ -232,6 +234,80 @@
         &__offer {
             width: 49%;
             max-height: 214px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .arrivals-cart {
+        padding: 50px 0 69px;
+    }
+
+    .cart {
+        padding: 39px 0 96px;
+
+        &__flex {
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        &__cards {
+            width: 100%;
+        }
+
+        &__cards &__card:nth-child(2) {
+            margin-bottom: 30px;
+        }
+
+        &__card {
+            height: 188px;
+            margin-bottom: 32px;
+        }
+
+        &__card-close {
+            width: 10px;
+            height: 11px;
+            top: 17px;
+            right: 12px;
+        }
+
+        &__img {
+            height: 188px;
+        }
+
+        &__card-content {
+            padding: 14px 0 38px 17px;
+            gap: 4px;
+        }
+
+        &__card-heading {
+            @include ff(16px, 400);
+            margin-bottom: 26px;
+        }
+
+        &__card-txt {
+            @include ff(14px, 400);
+        }
+
+        &__card-input {
+            @include ff(10px, 400);
+            width: 13%;
+            text-align: center;
+        }
+
+        &__btns {
+            margin-top: 0;
+        }
+
+        &__btn {
+            color: #575757;
+            @include ff(12px, 400);
+            padding: 10px 17px;
+        }
+
+        &__info {
+            width: 100%;
+            gap: 48px;
         }
     }
 }

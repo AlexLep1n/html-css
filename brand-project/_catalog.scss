@@ -48,6 +48,11 @@
         @include ff(14px, 600);
     }
 
+    &__img-svg {
+        width: 15px;
+        height: 10px;
+    }
+
     &__item {
         margin: 16px 0 0 0;
         cursor: pointer;
@@ -189,6 +194,46 @@
 
         &__catalog-box &__item:nth-child(3) {
             display: none;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .filter-sort {
+        padding: 11px 0 0 0;
+        height: 81px;
+        margin-bottom: 16px;
+    }
+
+    .filter {
+        width: auto;
+        &__heading {
+            display: none;
+        }
+
+        &__img-svg {
+            width: 37px;
+            height: 25px;
+        }
+    }
+
+    .sort {
+        left: 94px;
+        top: 24px;
+
+        &__summary {
+            @include ff(12px, 400);
+            gap: 9px;
+        }
+    }
+
+    .futured-catalog {
+        margin-bottom: 64px;
+    }
+
+    .futured {
+        &__catalog-box {
+            margin-bottom: 24px;
         }
     }
 }

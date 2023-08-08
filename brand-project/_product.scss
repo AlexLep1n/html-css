@@ -73,7 +73,7 @@
 }
 
 .collection {
-    margin-bottom: 70px;
+    margin-bottom: 129px;
 
     &__flex {
         @include df(center, center, 0);
@@ -229,6 +229,8 @@
     }
 
     .collection {
+        margin-bottom: 64px;
+
         &__flex {
             transform: translateY(0);
         }

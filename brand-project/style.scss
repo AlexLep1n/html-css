@@ -1,8 +1,4 @@
 @import "vars";
-@import "product";
-@import "catalog";
-@import "cart";
-@import "registration";
 
 @mixin df($jc, $ai, $g) {
     display: flex;
@@ -822,7 +818,7 @@ body {
         }
 
         &__bottom-bg {
-            padding: 43px 0 9px;
+            padding: 43px 0 24px;
         }
 
         &__bottom {
@@ -835,3 +831,8 @@ body {
         }
     }
 }
+
+@import "product";
+@import "catalog";
+@import "cart";
+@import "registration";
